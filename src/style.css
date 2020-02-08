@@ -1,0 +1,113 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  font-family: Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(192, 38%, 98%);
+  color: hsl(200, 07%, 42%);
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+header,
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90vw;
+  width: 550px;
+}
+
+header {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+h1 {
+  color: hsl(198, 18%, 22%);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 2rem;
+}
+
+p {
+  margin-top: 0.5rem;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+form {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 100%;
+}
+
+label {
+  color: hsl(200, 07%, 42%);
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-width: 100%;
+}
+
+@media (min-width: 575px) {
+  form {
+    grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
+  }
+
+  label.full {
+    grid-column: auto / span 3;
+  }
+}
+
+input,
+button {
+  border-radius: 0.25rem;
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+input {
+  background: #fff;
+  border: 2px solid hsl(180, 05%, 92%);
+}
+
+button {
+  align-self: center;
+  background-color: hsl(175, 100%, 29%);
+  border: 1px solid hsl(180, 05%, 92%);
+  border-bottom: 1px solid hsl(180, 05%, 92%);
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 24px;
+  min-width: 168px;
+  outline: 0;
+  padding: 7px 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: auto;
+}
+
+.privacy-notice {
+  font-size: 0.75rem;
+  margin-top: 2rem;
+  text-align: center;
+}

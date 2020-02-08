@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Update Your Address for Netlify Stickers!</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./full-logo-light.svg" alt="Netlify" />
+      <h1>Confirm your mailing address</h1>
+      <p>
+        Update your address before February 28, 2020 to claim your free Netlify
+        stickers!
+      </p>
+    </header>
+    <main>
+      <form
+        name="contact"
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
+        <label class="full">
+          Full Name
+          <input type="text" name="name" />
+        </label>
+        <label class="full">
+          Email Address
+          <input type="text" name="email" />
+        </label>
+        <label class="full">
+          Address Line 1
+          <input type="text" name="addr1" />
+        </label>
+        <label class="full">
+          Address Line 2
+          <input type="text" name="addr2" />
+        </label>
+        <label>
+          City
+          <input type="text" name="city" />
+        </label>
+        <label>
+          State/Province
+          <input type="text" name="state" />
+        </label>
+        <label>
+          ZIP/Postal Code
+          <input type="text" name="zip" />
+        </label>
+        <label class="full">
+          Country
+          <input type="text" name="country" />
+        </label>
+        <label class="hidden">
+          Don’t fill this out if you're human:
+          <input name="bot-field" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+
+      <p class="privacy-notice">
+        <strong>Please note:</strong> we won’t sell or share your information
+        with anyone. We will only use your address to deliver the stickers —
+        after we’ve sent them, we’ll destroy this data to protect your privacy.
+      </p>
+    </main>
+
+    <script src="./hide-spam-field.js"></script>
+  </body>
+</html>
